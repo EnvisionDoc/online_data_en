@@ -1,8 +1,4 @@
-# Guide
-
-## Developer guide
-
-### Basic architecture
+# Developer guide
 
 EnOS System sends the data acquired to Kafka in the cloud. The stream computing engine processes the data received in real time and outputs it to the downstream sql database, real-time database and message queue according to certain strategies. Users can access real-time data through the Restful interface provided by EnOS API.
 
@@ -28,13 +24,40 @@ For example, the following request is to query the real-time power generation of
 [https://eos.envisioncn.com/eeop/domainService/getmdmidspoints?appKey=your_appkey&sign=your_sign&token=your_token&mdmids=1782244a86890000&points=WWPP.APProduction](https://eos.envisioncn.com/eeop/domainService/getmdmidspoints?appKey=your_appkey&sign=your_sign&token=your_token&mdmids=1782244a86890000&points=WWPP.APProduction)
 
 
-| Parameter Name | Parameter Value   | Description                  |
-| :------------- | :---------------- | :--------------------------- |
-| appKey        | your_appkey       | User-assigned appId          |
-| sign           | your_sign         | User-assigned sign           |
-| token          | your_token        | User-assigned token          |
-| mdmids         | 1782244a8689000   | Device id                    |
-| points         | WWPP.APProduction | List of points to be queried |
+<body>
+<table border="1" cellspacing="0" cellpadding="0" width="798">
+  <tr>
+    <td><strong>Parameter Name</strong></td>
+    <td><strong>Parameter   Value</strong></td>
+    <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+    <td>appKey</td>
+    <td valign="top">your_appkey</td>
+    <td valign="top">User-assigned   appId</td>
+  </tr>
+  <tr>
+    <td>sign</td>
+    <td valign="top">your_sign</td>
+    <td valign="top">User-assigned   sign</td>
+  </tr>
+  <tr>
+    <td>token</td>
+    <td valign="top">your_token</td>
+    <td valign="top">User-assigned   token</td>
+  </tr>
+  <tr>
+    <td>mdmids</td>
+    <td valign="top">1782244a8689000</td>
+    <td valign="top">Device id</td>
+  </tr>
+  <tr>
+    <td>points</td>
+    <td valign="top">WWPP.APProduction</td>
+    <td valign="top">List of points   to be queried</td>
+  </tr>
+</table>
+</body>
 
 Return value:
 ``` json
@@ -146,20 +169,50 @@ A site-level computing interface provides the SiteCal object. In addition, as wi
     + Member attribute
     + Member method
 
-        |                            Method signature                            |           Return value           |             Description             |
-        |:----------------------------------------------------------------|:----------------------------|:------------------------------|
-        | getInstanceAttributeValue(String uuid, String attrKey)         | String                     | Get a specific master data attribute:
-         |
-        | getInstanceAttributeValues(String uuid, List<String> attrKeys) | Map<String,String>         | Get master data attributes in the input list:
-           |
-        | getInstanceAttributeValues(String uuid)                        | Map<String,String>         | Get all master data attributes
-         |
-        | getSpaceIdByUUID(String uuid)                                  | String                     | Gets the SpaceId for corresponding id
-           |
-        | findByKey(String mdmID, String tableName, String key)          | Map<String, Object>        | Get the dimension data                 |
-        | findByKey(String mdmID, String tableName, List<String> keys)   | Map<String, Object>        | Get the dimension data                 |
-        | isPointMapped(String uuid, String pointName)                   | boolean                    | Determine whether the provided point is configured with a map
-         |
+        <body>
+<table border="1" cellspacing="0" cellpadding="0" width="741">
+  <tr>
+    <td nowrap valign="top"><a name="OLE_LINK4"></ a><a name="OLE_LINK3"><strong>Method signature</strong></ a></td>
+    <td nowrap valign="top"><strong>Return value</strong></td>
+    <td nowrap valign="top"><strong>Description</strong></td>
+  </tr>
+  <tr>
+    <td nowrap valign="top">getInstanceAttributeValue(String uuid, String attrKey)</td>
+    <td valign="top">String</td>
+    <td valign="top">Get a specific master data attribute:</td>
+  </tr>
+  <tr>
+    <td nowrap valign="top">getInstanceAttributeValues(String uuid, List&nbsp;attrKeys)</td>
+    <td valign="top">Map&lt;String,String&gt;</td>
+    <td valign="top">Get master data attributes in the input list:</td>
+  </tr>
+  <tr>
+    <td nowrap valign="top">getInstanceAttributeValues(String uuid) </td>
+    <td valign="top">Map&lt;String,String&gt; </td>
+    <td valign="top">Get all master data attributes </td>
+  </tr>
+  <tr>
+    <td nowrap valign="top">getSpaceIdByUUID(String uuid)</td>
+    <td valign="top">String </td>
+    <td valign="top">Gets the SpaceId for corresponding id </td>
+  </tr>
+  <tr>
+    <td nowrap valign="top">findByKey(String mdmID, String tableName,   String key)</td>
+    <td valign="top">Map&lt;String, Object&gt; </td>
+    <td valign="top">Get the dimension data </td>
+  </tr>
+  <tr>
+    <td nowrap valign="top">findByKey(String mdmID, String tableName, List&nbsp;keys) </td>
+    <td valign="top">Map&lt;String,   Object&gt; </td>
+    <td valign="top">Get   the dimension data </td>
+  </tr>
+  <tr>
+    <td nowrap valign="top">isPointMapped(String   uuid, String pointName) </td>
+    <td valign="top">boolean</td>
+    <td valign="top">Determine   whether the provided point is configured with a map</td>
+  </tr>
+</table>
+</body>
 
 - ImplementInstance
     + Package: com.envision.energy.sdk.eos.calculate.data.service
