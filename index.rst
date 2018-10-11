@@ -11,6 +11,24 @@ Real-time data processing
    :maxdepth: 2
    :caption: Learn
 
-   streaming_overview
    getting_started
-   guide
+   streaming_overview
+
+.. toctree::
+   :maxdepth: 2
+   :caption: How-to's
+
+   querying_logs
+
+.. toctree::
+   :maxdepth: 2
+   :caption: References
+
+   streaming_api_reference
+   streaming_java_sdk_reference
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Relative services
+
+   Device Connection <https://docs.envisioniot.com/docs/device-connection/en/latest/deviceconnection_overview.html>
