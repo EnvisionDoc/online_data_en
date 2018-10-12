@@ -29,6 +29,13 @@ Real-time data processing
 
 .. toctree::
    :maxdepth: 1
-   :caption: Relative services
+   :caption: Related services
 
    Device Connection <https://docs.envisioniot.com/docs/device-connection/en/latest/deviceconnection_overview.html>
+
+Downloads
+""""""""
+    pdf_ htmlzip_ epub_
+.. _pdf: https://docs.envisioniot.com/projects/online-data/downloads/pdf/latest/
+.. _htmlzip: https://docs.envisioniot.com/projects/online-data/downloads/htmlzip/latest/
+.. _epub: https://docs.envisioniot.com/projects/online-data/downloads/epub/latest/
