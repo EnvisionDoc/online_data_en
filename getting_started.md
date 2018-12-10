@@ -1,12 +1,12 @@
-# Getting started with stream computing service
+# Getting Started with Stream Computing Service
 
 This topic illustrates how to use the stream computing service and print computation logs through the Java SDKs provides by EnOS.
 
-## System requirements
+## System Requirements
 
 Java SDK version 1.6 or 1.7
 
-## Before you start
+## Before You Start
 
 - Stream computing is based on the real-time data collected from devices that are connected to the EnOS cloud. For how to connect devices, see [EnOS Device connection](https://docs.envisioniot.com/docs/device-connection/en/latest/deviceconnection_overview.html).
 
@@ -37,9 +37,9 @@ Java SDK version 1.6 or 1.7
 
 - As the computation package is loaded via Java's [ServiceLoader](https://docs.oracle.com/javase/7/docs/api/java/util/ServiceLoader.html), you must create a new file under the `META-INFF/services` folder. This file should be named with the service API name, and the contents of the file is the Java code that implements the service as shown in the following section.
 
-## Sample codes
+## Sample Codes
 
-### Sample 1: Device-level computation
+### Sample 1: Device-level Computation
 
 ``` java
 package com.envision.energy.streaming.app;
@@ -83,7 +83,7 @@ public class DeviceCalImpl implements CalculateDevice {
 }
 ```
 
-### Sample 2: Site-level computation
+### Sample 2: Site-level Computation
 
 ``` java
 package com.envision.energy.streaming.app;
@@ -127,7 +127,7 @@ public class SiteCalImpl implements CalculateSite {
 }
 ```
 
-## Step 1:  Programming Java code to perform stream computing and print logs
+## Step 1:  Programming Java Code to Perform Stream Computing and Print Logs
 
 You can use the following code as a reference:
 
@@ -185,7 +185,7 @@ public class DeviceSampelCal implements CalculateDeviceWithDataService {
 
 ```
 
-## Step 2: Deploy the stream computing package on EnOS
+## Step 2: Deploy the Stream Computing Package on EnOS
 
 The finished Java codes need to be packed into a `jar` file and uploaded to EnOS for the computation to run.
 
@@ -195,7 +195,7 @@ The finished Java codes need to be packed into a `jar` file and uploaded to EnOS
   - Select the application in the name of which to run stream computing.
   - Enter the file version.
 
-## Step 3: Query the logs of stream computing jobs
+## Step 3: Query the Logs of Stream Computing Jobs
 
 1. Click **Monitoring and Logs > Log Management** from the left navigation panel of EnOS Console.
 2. Select the target application and time range that you want to query logs for, and when needed, enter the keywords to return relevant logs.

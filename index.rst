@@ -1,24 +1,28 @@
-Real-time data processing
--------------------------
+Real-time Data Processing
+===========================
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    :caption: Back to
 
-   EnOS fundamental <https://docs.envisioniot.com/docs/enos/en/latest/overview/enos_introduction.html>
+   EnOS Fundamental <https://docs.envisioniot.com/docs/enos/en/latest/overview/enos_introduction.html>
 
 .. toctree::
    :maxdepth: 2
    :caption: Learn
 
-   getting_started
    streaming_overview
+   getting_started
+   ai_stream_processing
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: How-to's
 
-   querying_logs
+   create_ai_pipeline
+   release_ai_pipeline
+   monitor_ai_pipeline
 
 .. toctree::
    :maxdepth: 2
