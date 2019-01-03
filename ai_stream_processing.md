@@ -5,6 +5,6 @@ AI (analogy input)  consists of physical parameters like temperature, pressure, 
 AI real-time data processing consists of the following steps:
 
 1. Designing and creating an AI processing pipeline
-2. Releasing the pipeline
-3. Monitoring the pipeline
+2. Releasing the pipeline online
+3. Monitoring the pipeline status
 4. Viewing pipeline running results

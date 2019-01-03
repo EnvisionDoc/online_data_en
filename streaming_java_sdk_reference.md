@@ -78,38 +78,38 @@
     </tr>
     <tr>
   <td>getInstanceAttributeValue(String uuid, String attrKey)</td>
-  <td valign="top">String</td>
-  <td valign="top">Gets a specific master data attribute</td>
+  <td>String</td>
+  <td>Gets a specific master data attribute</td>
     </tr>
     <tr>
   <td>getInstanceAttributeValues(String uuid, List&nbsp;attrKeys)</td>
-  <td valign="top">Map&lt;String,String&gt;</td>
-  <td valign="top">Gets master data attributes in the input list</td>
+  <td>Map&lt;String,String&gt;</td>
+  <td>Gets master data attributes in the input list</td>
     </tr>
     <tr>
   <td>getInstanceAttributeValues(String uuid) </td>
-  <td valign="top">Map&lt;String,String&gt; </td>
-  <td valign="top">Gets all master data attributes </td>
+  <td>Map&lt;String,String&gt; </td>
+  <td>Gets all master data attributes </td>
     </tr>
     <tr>
   <td>getSpaceIdByUUID(String uuid)</td>
-  <td valign="top">String </td>
-  <td valign="top">Gets the SpaceId for corresponding id </td>
+  <td>String </td>
+  <td>Gets the SpaceId for corresponding id </td>
     </tr>
     <tr>
   <td>findByKey(String mdmID, String tableName,   String key)</td>
-  <td valign="top">Map&lt;String, Object&gt; </td>
-  <td valign="top">Gets the dimension data </td>
+  <td>Map&lt;String, Object&gt; </td>
+  <td>Gets the dimension data </td>
     </tr>
     <tr>
   <td>findByKey(String mdmID, String tableName, List&nbsp;keys) </td>
-  <td valign="top">Map&lt;String,   Object&gt; </td>
-  <td valign="top">Gets the dimension data </td>
+  <td>Map&lt;String,   Object&gt; </td>
+  <td>Gets the dimension data </td>
     </tr>
     <tr>
   <td>isPointMapped(String   uuid, String pointName) </td>
-  <td valign="top">boolean</td>
-  <td valign="top">Determines whether the provided point is configured with a map</td>
+  <td>boolean</td>
+  <td>Determines whether the provided point is configured with a map</td>
     </tr>
   </table>
 
