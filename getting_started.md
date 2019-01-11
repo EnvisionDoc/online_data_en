@@ -190,14 +190,17 @@ public class DeviceSampelCal implements CalculateDeviceWithDataService {
 The finished Java codes need to be packed into a `jar` file and uploaded to EnOS for the computation to run.
 
 1. Click **Streaming Service** from the left navigation panel of EnOS Console.
+
 2. Click **Upload Steaming package** and provide the following settings in the **Upload streaming computing package** window:
-  - Click **Upload**, browse to and select your stream computing package with a `.jar` file extension.
-  - Select the application in the name of which to run stream computing.
-  - Enter the file version.
+
+   - Click **Upload**, browse to and select your stream computing package with a `.jar` file extension.
+   - Select the application in the name of which to run stream computing.
+   - Enter the file version.
 
 ## Step 3: Query the Logs of Stream Computing Jobs
 
 1. Click **Monitoring and Logs > Log Management** from the left navigation panel of EnOS Console.
+
 2. Select the target application and time range that you want to query logs for, and when needed, enter the keywords to return relevant logs.
 
 For more information, see [Querying logs of stream computing jobs](querying_logs).

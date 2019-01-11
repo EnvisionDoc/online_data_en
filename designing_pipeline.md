@@ -1,12 +1,13 @@
 # Designing Data Aggregation Pipeline
 The general process of designing a data aggregation pipeline is as follows:
 
-![](media/2019-01-02-21-17-10.jpg)
+.. image:: media/2019-01-02-21-17-10.png
+   :width: 700px
 
 ## Creating a Pipeline
 EnOS Streaming System supports creating a pipeline and importing the configuration file of an existing pipeline.
 - Creating a pipeline:  You can create a pipeline from scratch by entering the pipeline name and description and selecting a template for data aggregation.
-- Importing configuration: You can import the configuration file of an existing pipeline and enter the new name and description to create a pipeline quickly. 
+- Importing configuration: You can import the configuration file of an existing pipeline and enter the new name and description to create a pipeline quickly.
 
 ## Configuring the Pipeline
 EnOS Streaming System provides templates to enable developers configure the following pipelines:
@@ -16,7 +17,8 @@ EnOS Streaming System provides templates to enable developers configure the foll
 ## Releasing the Pipeline
 After the pipeline configuration is completed, you can release it online. Before that, other processing of pipeline can be performed, such as saving the pipeline configuration, setting alarms, reverting the configuration to the online version, and exporting the configuration.
 - **Save**: After the pipeline configuration is completed, click **Save** to save the configuration, so that the pipeline can be released online.
-- **Release**: After the pipeline configuration is saved, click **Release** to release the pipeline online. Note: before releasing the pipeline online, ensure that the pipeline does not have an online running version.
+- **Release**: After the pipeline configuration is saved, click **Release** to release the pipeline online.
+  .. note:: before releasing the pipeline online, ensure that the pipeline does not have an online running version.
 - **Export**: If you want to reuse the pipeline configuration, click **Export** to export the configuration file to local directory. When creating more pipelines, you can import the saved configuration file for reference.
 - **Revert to online version**: When you are in the progress of editing the pipeline configuration of an online version and get unsatisfied with the changes, you can revert the configuration to the online version with one click.
 - **Alarm setting**: For each pipeline, an alarm can be set to report errors through email or SMS. When errors are reported for running pipelines, the owner of the pipeline will receive notification.

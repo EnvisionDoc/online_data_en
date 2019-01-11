@@ -70,48 +70,36 @@
 - Attributes:  NA
 - Methods: see the following table
 
-  <table>
-    <tr>
-  <th>Method signature</th>
-  <th>Return value</th>
-  <th>Description</th>
-    </tr>
-    <tr>
-  <td>getInstanceAttributeValue(String uuid, String attrKey)</td>
-  <td>String</td>
-  <td>Gets a specific master data attribute</td>
-    </tr>
-    <tr>
-  <td>getInstanceAttributeValues(String uuid, List&nbsp;attrKeys)</td>
-  <td>Map&lt;String,String&gt;</td>
-  <td>Gets master data attributes in the input list</td>
-    </tr>
-    <tr>
-  <td>getInstanceAttributeValues(String uuid) </td>
-  <td>Map&lt;String,String&gt; </td>
-  <td>Gets all master data attributes </td>
-    </tr>
-    <tr>
-  <td>getSpaceIdByUUID(String uuid)</td>
-  <td>String </td>
-  <td>Gets the SpaceId for corresponding id </td>
-    </tr>
-    <tr>
-  <td>findByKey(String mdmID, String tableName,   String key)</td>
-  <td>Map&lt;String, Object&gt; </td>
-  <td>Gets the dimension data </td>
-    </tr>
-    <tr>
-  <td>findByKey(String mdmID, String tableName, List&nbsp;keys) </td>
-  <td>Map&lt;String,   Object&gt; </td>
-  <td>Gets the dimension data </td>
-    </tr>
-    <tr>
-  <td>isPointMapped(String   uuid, String pointName) </td>
-  <td>boolean</td>
-  <td>Determines whether the provided point is configured with a map</td>
-    </tr>
-  </table>
+
+
+.. list-table::
+   :widths: auto
+
+   * - Method signature
+     - Return value
+     - Description
+   * - getInstanceAttributeValue(String uuid, String attrKey)
+     - String
+     - Gets a specific master data attribute
+   * - getInstanceAttributeValues(String uuid, List&nbsp;attrKeys)
+     - Map&lt;String,String&gt;
+     - Gets master data attributes in the input list
+   * - getInstanceAttributeValues(String uuid)
+     - Map&lt;String,String&gt;
+     - Gets all master data attributes
+   * - getSpaceIdByUUID(String uuid)
+     - String
+     - Gets the SpaceId for corresponding id
+   * - findByKey(String mdmID, String tableName,   String key)
+     - Map&lt;String, Object&gt;
+     - Gets the dimension data
+   * - findByKey(String mdmID, String tableName, List&nbsp;keys)
+     - Map&lt;String,   Object&gt;
+     - Gets the dimension data
+   * - isPointMapped(String   uuid, String pointName)
+     - boolean
+     - Determines whether the provided point is configured with a map
+
 
 ## `ImplementInstance`
 - Package: com.envision.energy.sdk.eos.calculate.data.service
