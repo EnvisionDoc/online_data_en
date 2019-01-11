@@ -15,7 +15,7 @@ You can check and verify the computation results in the **Log Management** inter
 
   - When using string `[key=value]` to limit the search scope, you can add `!!` before `key` to keep the condition unchanged when viewing the context based on a particular result. For example: `Developer [!!Surname = Smith; sex = male)` means the surname must still be “Smith” when viewing the context against a particular result.
 
-    **Note**:The conditions for fields `timestamp` and `msg` are ignored by default when viewing the context.
+    .. note::The conditions for fields `timestamp` and `msg` are ignored by default when viewing the context.
 
 ## Querying real-time data through rest API
 

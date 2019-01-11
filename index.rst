@@ -1,4 +1,4 @@
-Real-time Data Processing
+﻿Real-time Data Processing
 ===========================
 
 .. toctree::
@@ -14,6 +14,13 @@ Real-time Data Processing
 
    streaming_overview
    ai_stream_processing
+   ai_template_overview
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Getting Started
+
+   gettingstarted_ai
 
 .. toctree::
    :maxdepth: 1
@@ -22,6 +29,7 @@ Real-time Data Processing
    create_ai_pipeline
    release_ai_pipeline
    monitor_ai_pipeline
+   designing_pipeline
 
 .. toctree::
    :maxdepth: 2
