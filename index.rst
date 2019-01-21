@@ -1,12 +1,5 @@
-﻿Real-time Data Processing
+﻿EnOS Streaming Analytics
 ===========================
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   :caption: Back to
-
-   EnOS™ Fundamental <https://docs.envisioniot.com/docs/enos/en/latest/overview/enos_introduction.html>
 
 .. toctree::
    :maxdepth: 2
@@ -26,9 +19,6 @@
    :maxdepth: 1
    :caption: How-to's
 
-   create_ai_pipeline
-   release_ai_pipeline
-   monitor_ai_pipeline
    designing_pipeline
 
 .. toctree::
@@ -41,9 +31,11 @@
 
 .. toctree::
    :maxdepth: 1
-   :caption: Related services
+   :caption: Related Services
 
    Device Connection <https://docs.envisioniot.com/docs/device-connection/en/latest/device_management_overview.html>
+   Data Asset Management  <https://docs.envisioniot.com/docs/data-asset/en/latest/index.html>
+   Application Development <https://docs.envisioniot.com/docs/app-development/en/latest/app_dev_overview.html>
 
 Downloads
 """"""""

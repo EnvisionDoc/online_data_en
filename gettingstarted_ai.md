@@ -23,9 +23,7 @@ The procedure of processing data with AI aggregation template is as follows:
 The goal of this guide is to get the maximum value of the *test_raw* input point within every 5 minutes and output the value to the output point *test_5min*.
 
 **Data Preparation**
-- Model configuration
-
-Detailed information about the *testModel* for this guide is as follows:
+- Model configuration: Detailed information about the *testModel* for this guide is as follows:
 
 .. list-table::
    :widths: 20 15 15 15 20 10
@@ -53,7 +51,7 @@ Detailed information about the *testModel* for this guide is as follows:
         - Ensure that both the input point and the output point are of AI type.
 
 
-- Storage configuration:  Configuring the input point *test_raw* as AI raw data and the output point *test_5min* as minute-level normalized AI data. For more information, see [Storage Strategy Configuration]().  
+- Storage configuration:  Configuring the input point *test_raw* as AI raw data and the output point *test_5min* as minute-level normalized AI data. For more information, see [Storage Strategy Configuration](https://docs.envisioniot.com/docs/data-asset/en/latest/storage_strategy_overview.html).  
 - Data ingestion: For information about data ingestion of input point *test_raw*, see [Device Connection](https://docs.envisioniot.com/docs/device-connection/zh_CN/latest/gettingstarted_device_connection.html).
 
 
@@ -67,7 +65,7 @@ Detailed information about the *testModel* for this guide is as follows:
 
    - Window Type: Select **Tumbling Window** type, which has a fixed size and does not overlap.
    - Latency Setting: Select an allowed lateness for data arriving late. *0 second* indicates that data arriving late will be dropped.
-   
+
 4. Configure the processing strategy of the pipeline. Click **New processing strategy** to add a data processing record. Description of each field is as follows:
 
    - **Input point**: Select the measure point of AI raw data. In this example, select the *test_raw* point of the *testModel*.

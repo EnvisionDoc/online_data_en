@@ -1,8 +1,8 @@
 # Designing Data Aggregation Pipeline
 The general process of designing a data aggregation pipeline is as follows:
 
-.. image:: media/2019-01-02-21-17-10.png
-   :width: 700px
+.. image:: media/managing_pipeline.png
+   :width: 600px
 
 ## Creating a Pipeline
 EnOS Streaming System supports creating a pipeline and importing the configuration file of an existing pipeline.

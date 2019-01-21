@@ -1,12 +1,12 @@
 # AI Data Aggregation Template Overview
-AI (analogy input) consists of physical parameters like temperature, pressure, flow, etc. The values of these parameters are collected by various sensors, converted to electric signals by transmitter, and transferred to the analogy input port of the controller. For this kind of data, EnOS Streaming System provides a unified AI data aggregation template to process the AI data of a measure point and assign the processed data to another measure point on the same device, thus enabling developers to process real-time AI data easily and quickly.  
+EnOS Streaming System provides a unified AI data aggregation template to process the AI data ingested from a measure point and assign the processed data to another measure point defined for the same device, thus enabling developers to process real-time AI data easily and quickly.  
 
 ## Features
 1. Supporting event-time-based AI data aggregation.
 
 2. Providing rich aggregation algorithm, including  max, min, avg, sum, and cnt.
 
-3. Supporting time window latency. When window latency is set, an intermediate output (the output value when the window closes normally) is generated. The intermediate output will be saved in TSDB but will not archived.
+3. Supporting time window latency. When window latency is set, an intermediate output will be generated (the computed output value of the current window when the next window starts) . The intermediate output will be saved in TSDB but will not be archived.
 
 4. Supporting various threshold ranges. Input data that exceed the threshold will be processed by the interpolation algorithm.
 
@@ -42,13 +42,17 @@ EnOS integrates asset templates to normalize all asset input data, so the stream
 
    > 1. The output point must be a measure point of AI type.
    > 2. Ensure that the input point and output point belong to the same model.
-   > 3. The input point cannot be the output point in the same pipeline.  
+   > 3. Avoid designing loop pipelines in the Streaming system, like a -> b -> c -> a.
 
  + **Threshold**: Before processing, data are filtered by the specified threshold. Data exceeding the threshold will be processed by interpolation algorithm.
+
+   > If the data of the input point is not raw data and the interpolation strategy is "Abandon", the specified threshold will not take effect.
 
  + **Interpolation**: Interpolation algorithm that is used to revise the input data. Currently, interpolation strategy supports abandon only. Data that exceed the threshold will not be included in the processing.
 
  + **Window size**: Specifies the amount of data to be computed in a single window.
+
+   > In sequential aggregation pipelines like "a -> b -> c", the window size of  pipeline "b -> c" should be the same as that of pipeline "a -> b" because pipeline "a -> b" will generate an intermediate output. 
 
  + **Aggregation**: The function that is selected to compute data in the window. EnOS Streaming System currently supports functions like max, min, avg, sum, and cnt.
 
