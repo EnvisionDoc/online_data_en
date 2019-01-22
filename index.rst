@@ -34,7 +34,7 @@
    :caption: Related Services
 
    Device Connection <https://docs.envisioniot.com/docs/device-connection/en/latest/device_management_overview.html>
-   Data Asset Management  <https://docs.envisioniot.com/docs/data-asset/en/latest/index.html>
+   Data Asset Management  <https://docs.envisioniot.com/docs/data-asset/en/latest/data_subscription_overview.html>
    Application Development <https://docs.envisioniot.com/docs/app-development/en/latest/app_dev_overview.html>
 
 Downloads

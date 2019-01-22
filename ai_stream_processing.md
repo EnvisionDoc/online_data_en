@@ -4,10 +4,10 @@ AI (analogy input)  data consist of physical parameters like temperature, pressu
 
 AI real-time data streaming procedure consists of the following steps:
 
-1. Designing and creating an AI data processing pipeline
+1. Designing and creating an AI data processing stream
 
-2. Releasing the processing pipeline online
+2. Releasing the processing stream online
 
-3. Monitoring the pipeline status
+3. Monitoring the stream status
 
-4. Viewing pipeline running results
+4. Viewing stream running results

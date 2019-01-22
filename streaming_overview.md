@@ -4,7 +4,7 @@ EnOS™ Streaming Analytics targets to meet the real-time data processing requir
 
 Powered by Apache Spark™ Streaming with Envision customization and optimization, the EnOS Streaming Analytics engine offers high scalability, high throughput, and high fault-tolerance.
 
-The streaming analytics service provides unified templates and a GUI to enable developers to customize a real-time data processing pipeline by dragging and dropping the function modules.
+The streaming analytics service provides unified templates and a GUI to enable developers to customize a real-time data processing stream by dragging and dropping the function modules.
 
 ## What Are Streaming Data?
 
@@ -42,21 +42,11 @@ The result of stream computing triggered by streaming data is recorded directly 
 
 - Computation of device states
 
-  In some business scenarios, you might need to obtain certain state parameters of a device to confirm its status. You might want to program under the following circumstances:
-
-
-## Considerations for Streaming Analytics
-
-The streaming analytics framework maintains the state of devices and sites internally. The information is updated in real time according to the telemetry data.
-
-- The system updates both the measure point values and the device connection status to the latest state.
-- The update frequency depends on the acquisition and upload frequency of the measure points.
-
-If a device is not connected, it means that the measure point of the device is not updated.
+  In some business scenarios, you might need to obtain certain state parameters of a device to confirm its status. The streaming analytics framework maintains the state of devices and sites internally. The system updates both the measure point values and the device connection status to the latest state.
 
 ## Key Concepts of EnOS Streaming Analytics
 
-  The following concepts are used in designing a customized stream computing pipeline:
+  The following concepts are used in designing a customized computing stream:
 
   -   **Window Size**: Apache Spark™ Streaming is a stream computing engine based on time windows (micro-batch model) and processes data at the specified window size (interval of batch size). Windowing is simply the notion of taking a data source and chopping it up along temporal boundaries into finite chunks for processing, which determines how often a stream computing task gets the data.
   -   **Point Calculator**: The abstraction of the raw data acquisition points and user-defined computation points.

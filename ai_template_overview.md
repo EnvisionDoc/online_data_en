@@ -10,8 +10,8 @@ EnOS Streaming System provides a unified AI data aggregation template to process
 
 4. Supporting various threshold ranges. Input data that exceed the threshold will be processed by the interpolation algorithm.
 
-## Aggregation Pipeline Configuration
-The configuration method of the aggregation pipeline depends on the type of selected time window. Time window is a useful data processing mechanism of streaming computing. Windowing is simply the notion of taking a data source and chopping it up along temporal boundaries into finite chunks for processing (such as sum). EnOS Streaming system supports tumbling window and sliding window.
+## Processing Stream Configuration
+The configuration method of the AI data processing stream depends on the type of selected time window. Time window is a useful data processing mechanism of streaming computing. Windowing is simply the notion of taking a data source and chopping it up along temporal boundaries into finite chunks for processing (such as sum). EnOS Streaming system supports tumbling window and sliding window.
 
 ### Tumbling Window
 Tumbling windows have a fixed size and do not overlap. Data belonging to a window will be aggregated with the specified method. For example, if you specify a tumbling window with a size of 5 minutes, the current window will be evaluated, and a new window will be started every five minutes. See the example in the following figure.
@@ -42,7 +42,7 @@ EnOS integrates asset templates to normalize all asset input data, so the stream
 
    > 1. The output point must be a measure point of AI type.
    > 2. Ensure that the input point and output point belong to the same model.
-   > 3. Avoid designing loop pipelines in the Streaming system, like a -> b -> c -> a.
+   > 3. Avoid designing loop streams in the Streaming system, like a -> b -> c -> a.
 
  + **Threshold**: Before processing, data are filtered by the specified threshold. Data exceeding the threshold will be processed by interpolation algorithm.
 
@@ -52,7 +52,7 @@ EnOS integrates asset templates to normalize all asset input data, so the stream
 
  + **Window size**: Specifies the amount of data to be computed in a single window.
 
-   > In sequential aggregation pipelines like "a -> b -> c", the window size of  pipeline "b -> c" should be the same as that of pipeline "a -> b" because pipeline "a -> b" will generate an intermediate output. 
+   > In sequential aggregation streams like "a -> b -> c", the window size of stream "b -> c" should be the same as that of stream "a -> b" because stream "a -> b" will generate an intermediate output. 
 
  + **Aggregation**: The function that is selected to compute data in the window. EnOS Streaming System currently supports functions like max, min, avg, sum, and cnt.
 
@@ -66,7 +66,7 @@ EnOS integrates asset templates to normalize all asset input data, so the stream
 
 You can perform the following general operations for processing strategies:
 
-- **Add**: Click **New processing strategy** to add a new entry of processing strategy. The pipeline can be saved only when all configuration is completed.
+- **Add**: Click **New processing strategy** to add a new entry of processing strategy. The stream can be saved only when all configuration is completed.
 - **Copy**: Click the **Copy** icon to copy an existing strategy and configure a new one quickly.
 - **Edit**: Each processing strategy can be edited if needed.
 - **Delete**: Click the **Delete** icon to remove a processing strategy if needed.
