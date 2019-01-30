@@ -20,13 +20,13 @@ In general, streaming analytics has the following characteristics:
 
 **Real-time and unbounded data streaming**
 
-The computation faced by the engine is real-time and streaming, and the data streams are subscribed and consumed by stream computing in chronological order.
+The computation the engine processes is real-time and streaming, and the data streams are subscribed and consumed by stream computing in chronological order.
 
 Because data are generated continuously, the data streams are integrated to the streaming system continuously. For example, website access log is a type of streaming data, the log continuously records data as long as the website is online. Thus, the streaming data are always real-time and unbounded.
 
 **Continuous and efficient computation**
 
-The computation models of stream computing are "event triggered". The trigger is the unbounded streaming data mentioned in the above section. Once new streaming data are sent to the system, the system immediately initiates and performs a computation task. Therefore, the stream computing is a continuous process.
+The computation models of stream computing are "event triggered". The trigger is the unbounded streaming data mentioned in the previous section. Once new streaming data are sent to the system, the system immediately initiates and performs a computation task. Therefore, stream computing is a continuous process.
 
 **Streaming and real-time data integration**
 
@@ -38,7 +38,7 @@ The result of stream computing triggered by streaming data is recorded directly 
 
 - Aggregating and calculating asset raw data
 
-  In most business scenarios, you might need to filter the raw data received from devices, aggregate the data by certain algorithm, and save the aggregated data for further analysis.  
+  In most business scenarios, you might need to filter the raw data received from devices, aggregate the data by a certain algorithm, and save the aggregated data for further analysis.  
 
 - Computation of device states
 

@@ -51,8 +51,8 @@ The goal of this guide is to get the maximum value of the *test_raw* input point
         - Ensure that both the input point and the output point are of AI type.
 
 
-- Storage configuration:  Configuring the input point *test_raw* as AI raw data and the output point *test_5min* as minute-level normalized AI data. For more information, see [Storage Strategy Configuration](https://docs.envisioniot.com/docs/data-asset/en/latest/storage_strategy_overview.html).  
-- Data ingestion: For information about data ingestion of input point *test_raw*, see [Device Connection](https://docs.envisioniot.com/docs/device-connection/en/latest/gettingstarted_device_connection.html).
+- Storage configuration:  Configuring the input point *test_raw* as AI raw data and the output point *test_5min* as minute-level normalized AI data. For more information, see [Storage Strategy Configuration](https://www.envisioniot.com/docs/data-asset/en/latest/storage_strategy_overview.html).  
+- Data ingestion: For information about data ingestion of input point *test_raw*, see [Device Connection](https://www.envisioniot.com/docs/device-connection/en/latest/gettingstarted_device_connection.html).
 
 
 ## Step 1. Designing AI Aggregation Stream
@@ -89,7 +89,7 @@ On the **Stream Operation** page, find the running stream in the table, and clic
 
 - **Summary**: View the summary of the running stream, such as the overall data processing records and the data aggregation records in a specific period.
 - **Log**: Click the **View Logs** icon on the upper right corner to check the running log of the stream.
-- **Results**: Call the *getAssetsAINormalizedData* API to get the minute-level normalized data in the output point. For more information, see [Calling EnOS REST APIs](https://docs.envisioniot.com/docs/app-development/en/latest/call_enos_api.html).
+- **Results**: Call the *getAssetsAINormalizedData* API to get the minute-level normalized data in the output point. For more information, see [Calling EnOS REST APIs](https://www.envisioniot.com/docs/app-development/en/latest/call_enos_api.html).
 
 .. |start_icon| image:: media/start_icon.png
 

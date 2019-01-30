@@ -33,13 +33,13 @@
    :maxdepth: 1
    :caption: Related Services
 
-   Device Connection <https://docs.envisioniot.com/docs/device-connection/en/latest/device_management_overview.html>
-   Data Asset Management  <https://docs.envisioniot.com/docs/data-asset/en/latest/data_subscription_overview.html>
-   Application Development <https://docs.envisioniot.com/docs/app-development/en/latest/app_dev_overview.html>
+   Device Connection <https://www.envisioniot.com/docs/device-connection/en/latest/device_management_overview.html>
+   Data Asset Management  <https://www.envisioniot.com/docs/data-asset/en/latest/data_subscription_overview.html>
+   Application Development <https://www.envisioniot.com/docs/app-development/en/latest/app_dev_overview.html>
 
 Downloads
 """"""""
     pdf_ htmlzip_ epub_
-.. _pdf: https://docs.envisioniot.com/projects/online-data/downloads/pdf/latest/
-.. _htmlzip: https://docs.envisioniot.com/projects/online-data/downloads/htmlzip/latest/
-.. _epub: https://docs.envisioniot.com/projects/online-data/downloads/epub/latest/
+.. _pdf: https://www.envisioniot.com/projects/online-data/downloads/pdf/latest/
+.. _htmlzip: https://www.envisioniot.com/projects/online-data/downloads/htmlzip/latest/
+.. _epub: https://www.envisioniot.com/projects/online-data/downloads/epub/latest/
