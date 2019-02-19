@@ -66,7 +66,7 @@ The goal of this guide is to get the maximum value of the *test_raw* input point
    - Window Type: Select **Tumbling Window** type, which has a fixed size and does not overlap.
    - Latency Setting: Select an allowed lateness for data arriving late. *0 second* indicates that data arriving late will be dropped.
 
-4. Configure the data processing strategy of the stream. Click **New strategy** to add a data processing strategy. Description of each field is as follows:
+4. Configure the data processing strategy of the stream. Click **New Strategy** to add a data processing strategy. Description of each field is as follows:
 
    - **Input point**: Select the measure point of AI raw data. In this example, select the *test_raw* point of the *testModel*.
    - **Threshold**: Specify the threshold for filtering raw data before processing.

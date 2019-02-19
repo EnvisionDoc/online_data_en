@@ -11,7 +11,7 @@ EnOS Streaming System supports creating a data processing stream and importing t
 
 ## Configuring the Stream
 EnOS Streaming System provides templates to enable developers configure the following streams:
-- Window Aggregation for AI template: Supports AI data aggregation for a measure point and assign the processed data to another measure point on the same device. For details, see [AI Data Aggregation Template Overview](ai_template_overview).  
+- Window Aggregation for AI template: Supports AI data aggregation for a measure point and assign the processed data to another measure point on the same device. For details, see [AI Data Aggregation](ai_template_overview).  
 - Multiple Data Streams Aggregation template: Supports expression processing of multiple measure points on a device.
 
 ## Releasing the Stream
@@ -22,12 +22,3 @@ After the stream configuration is completed, you can release it online. Before t
 - **Export**: If you want to reuse the stream configuration, click **Export** to export the configuration file to a local directory. When creating more streams, you can import the saved configuration file for reference.
 - **Revert to Online Version**: When you are in the progress of editing the stream configuration of an online version and get unsatisfied with the changes, you can revert the configuration to the online version with one click.
 - **Alarm Setting**: For each stream, an alarm can be set to report errors through email or SMS. When errors are reported for running streams, the owner of the stream will receive notification.
-
-## Monitoring the Stream
-After the stream is released online, you can manage the stream through various operations on the **Stream Operation** page, such as previewing, starting and stopping the stream, checking its running status, and viewing stream configuration.
-- **Preview stream**: Before starting the stream, you can preview it. On the **Stream Operation** page, search for the stream by its ID or name, or filter streams with the owner. Click the stream name to open the stream details page, and then click the **Preview** icon in the upper right corner of the page. Complete the preview configuration and run the preview. The preview will intercept and process the latest real-time data, and the processed data will not be saved in the DB. With the preview results, you can debug and tune the stream. If the preview results meet the expectation, you can start the stream directly.
-- **Start stream**: Click the **Start** button in the **Operations** column of the stream list to start the stream. Then the stream will run continuously in the Streaming system.
-- **Stop stream**: To stop a running stream, click the **Stop** button in the **Operations** column.
-- **Check running status**: Click the name of a running stream to view its running status, including its running result summary and error logs.
-- **View configuration**: Click the **View** button in the **Operations** column to view the stream configuration.
-- **Export configuration**: Click the **Export** button in the **Operations** column to export the stream configuration.
