@@ -51,7 +51,7 @@ The procedure of EnOS Stream Analytics is as follows:
 
 1. Processing of raw data
 
-   Original measure point data is sent to Kafka through the EnOS connection layer. The messages received are analyzed by the stream computing process of measure points. Before processing, the data is filtered by the specified threshold. Data exceeding the threshold will be processed by interpolation algorithm. 
+   Original measure point data is sent to Kafka through the EnOS connection layer. The messages received are analyzed by the stream computing process of measure points. Before processing, the data is filtered by the specified threshold. Data exceeding the threshold will be processed by interpolation algorithm.
 
 2. Performing calculation
 
@@ -69,4 +69,4 @@ EnOS Device Management helps you quickly and securely connect physical devices t
 
 ### Data Asset Management
 
-EnOS™ Data Asset Management helps you properly manage the data that is ingested from the devices that are connected with EnOS Cloud. EnOS Data Asset Management enables you to subscribe to real-time and alert data, customize data storage policies, and retrieve stored data with APIs. [Learn more >>](https://www.envisioniot.com/docs/data_asset/en/latest/data_asset_overview.html).
+EnOS™ Data Asset Management helps you properly manage the data that is ingested from the devices that are connected with EnOS Cloud. EnOS Data Asset Management enables you to subscribe to real-time and alert data, customize data storage policies, and retrieve stored data with APIs. [Learn more >>](https://www.envisioniot.com/docs/data-asset/en/latest/data_asset_overview.html).

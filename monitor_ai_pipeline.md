@@ -1,20 +1,20 @@
-# Monitoring an AI pipeline
+# Monitoring the Data Aggregation Stream
 
-After the pipeline is released online, you can manage the pipeline through various operations on the **Pipeline Operation** page, such as previewing, starting, and stopping the pipeline, checking its running status, and viewing pipeline configuration.
+After the data aggregation stream is released online, you can manage the stream through various operations on the **Stream Operation** page, such as previewing, starting, and stopping the stream, checking its running status, and viewing stream configuration.
 
- - **Preview pipeline**: Before starting the pipeline, you can preview it. On the **Pipeline Operation** page, search for the pipeline by its ID or name. Click the pipeline name to open the pipeline details page, and then click the **Preview** button on the upper right corner. Complete the preview configuration and run the preview. The preview will intercept and process the latest real-time data, and the processed data will not be saved in the DB. With the preview results, you can debug and tune the pipeline. If the preview results meet the expectation, you can start the pipeline directly.
+ - **Preview stream**: Before starting the stream, you can preview it. On the **Stream Operation** page, search for the stream by its ID or name. Click the stream name to open the stream details page, and then click the **Preview** button on the upper right corner. Complete the preview configuration and run the preview. The preview will intercept and process the latest real-time data, and the processed data will not be saved in the DB. With the preview results, you can debug and tune the stream. If the preview results meet the expectation, you can start the stream directly.
 
- - **Start pipeline**: Click the **Start** icon in the **Operations** column of the pipeline list to start the pipeline. Then the pipeline will run continuously in the Streaming system.
+ - **Start stream**: Click the **Start** icon in the **Operations** column of the stream list to start the stream. Then the stream will run continuously in the Streaming system.
 
- - **Stop pipeline**: To stop a running pipeline, click the **Stop** icon in the **Operations** column.
+ - **Stop stream**: To stop a running stream, click the **Stop** icon in the **Operations** column.
 
- - **Check running status**: Click the name of a running pipeline to view its running status, including its running result summary and error logs.
+ - **Check running status**: Click the name of a running stream to view its running status, including its running result summary and error logs.
 
- - **View configuration**: Click the **View** icon in the **Operations** column to view the pipeline configuration details.
+ - **View configuration**: Click the **View** icon in the **Operations** column to view the stream configuration details.
 
- - **Export configuration**: Click the **Export** icon in the **Operations** column to export the pipeline configuration file.
+ - **Export configuration**: Click the **Export** icon in the **Operations** column to export the stream configuration file.
 
 
- ## Viewing pipeline running results
+ ## Viewing stream running results
 
-When the pipeline is started, it will process the asset data of the current organization by default. The processed data results for a specific asset can be viewed on the **Device Management** page.
+When the stream is started, it will process the asset data of the current organization by default. The processed data results for a specific asset can be viewed on the **Device Management** page.

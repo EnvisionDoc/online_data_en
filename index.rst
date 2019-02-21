@@ -1,21 +1,21 @@
 ﻿EnOS Stream Analytics
-===========================
+=======================
 
 .. toctree::
-    :maxdepth: 1
-    :caption: Overview
-
+   :maxdepth: 1
+   :caption: Overview
+    
    streaming_overview
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Learn
 
    streaming_concepts
    ai_template_overview
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Get Started
 
    gettingstarted_ai
@@ -28,7 +28,7 @@
    monitor_ai_pipeline
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Reference
 
 ..

@@ -2,7 +2,6 @@
 The general process of designing a data aggregation stream is as follows:
 
 .. image:: media/managing_stream.png
-   :width: 600px
 
 ## Creating a Stream
 EnOS Streaming System supports creating a data processing stream and importing the configuration file of an existing stream.
