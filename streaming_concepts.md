@@ -34,7 +34,7 @@ In general, event time (time when an event occurs) is used in AI data aggregatio
 
 EnOS Stream Processing Engine is based on time windows (micro-batch model) and processes data at the specified window size (interval of batch size). Windowing is simply the notion of taking a data source and chopping it up along temporal boundaries into finite chunks for processing, which determines how often a stream computing task gets the data. EnOS Streaming Processing Engine supports tumbling window.
 
-## Tumbling Window
+## Tumbling window
 
 Tumbling windows have a fixed size and do not overlap. Data belonging to a window will be aggregated with the specified method. For example, if you specify a tumbling window with a size of 5 minutes, the current window will be evaluated, and a new window will be started every five minutes. See the example in the following figure.
 

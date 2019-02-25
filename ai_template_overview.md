@@ -6,7 +6,7 @@ EnOS Streaming Processing Engine provides a unified AI data aggregation template
 ## Features
 - Supporting event-time-based AI data aggregation.
 
-- Providing rich aggregation algorithm, including  max, min, avg, sum, and cnt.
+- Providing rich aggregation algorithm, including `max`, `min`, `avg`, `sum`, and `cnt`.
 
 - Supporting time window latency. When window latency is set, an intermediate output will be generated (the computed output value of the current window when the next window starts) . The intermediate output will be saved in TSDB but will not be archived.
 
@@ -39,13 +39,13 @@ EnOS integrates asset templates to normalize all asset input data, so the stream
 
    > In sequential aggregation streams like "a -> b -> c", the window size of stream "b -> c" should be the same as that of stream "a -> b" because stream "a -> b" will generate an intermediate output. 
 
- + **Aggregation**: The function that is selected to compute data in the window. EnOS Streaming Processing Engine currently supports functions like max, min, avg, sum, and cnt.
+ + **Aggregation**: The function that is selected to compute data in the window. EnOS Streaming Processing Engine currently supports functions like `max`, `min`, `avg`, `sum`, and `cnt`.
 
-   -  max: Compare all valid record values in the time window and output the maximum value.
-   -  min: Compare all valid record values in the time window and output the minimum value.
-   -  avg: Calculate and output the average value of all valid record values in the time window.
-   -  sum: Calculate and output the sum value of all valid record values in the time window.
-   -  cnt: Count all valid record values in the time window and output the total number.
+   -  `max`: Compare all valid record values in the time window and output the maximum value.
+   -  `min`: Compare all valid record values in the time window and output the minimum value.
+   -  `avg`: Calculate and output the average value of all valid record values in the time window.
+   -  `sum`: Calculate and output the sum value of all valid record values in the time window.
+   -  `cnt`: Count all valid record values in the time window and output the total number.
 
 ### Processing strategy management
 
