@@ -12,7 +12,7 @@ Java SDK version 1.6 or 1.7
 
 - Download the EnOS stream computing and log SDKs.
 
-- To use the stream computing service, a computation package must carry a corresponding application key, which is obtained through the application management service. For more information, see [Getting started with application management](https://www.envisioniot.com/docs/app-development/en/latest/app_mgmt/getting_started_app_management.html).
+- To use the stream computing service, a computation package must carry a corresponding application key, which is obtained through the application registration service. For more information, see [Getting started with application registration](https://www.envisioniot.com/docs/app-development/en/latest/app_mgmt/getting_started_app_management.html).
 
 
 - Add the EnOS stream computing package into the `pom.xml` file for the project:

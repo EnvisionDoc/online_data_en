@@ -31,9 +31,7 @@
    :maxdepth: 1
    :caption: Reference
 
-..
-   streaming_api_reference
-   streaming_java_sdk_reference
+   statement_syntax
 
 
 Downloads

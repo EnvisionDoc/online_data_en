@@ -1,5 +1,5 @@
 # AI Data Aggregation
-AI (analogy input)  data consists of physical parameters like temperature, pressure, flow, etc. The values of these parameters are collected by various sensors, converted to electric signals by a transmitter, and transferred to the analogy input of the controller. 
+AI (analogy input)  data consists of physical parameters like temperature, pressure, flow, etc. The values of these parameters are collected by various sensors, converted to electric signals by a transmitter, and transferred to the analogy input of the controller.
 
 EnOS Streaming Processing Engine provides a unified AI data aggregation template to process the AI type data ingested from a measure point and assign the processed data to another measure point defined for the same device, thus enabling developers to process real-time AI data easily and quickly.  
 
@@ -13,7 +13,7 @@ EnOS Streaming Processing Engine provides a unified AI data aggregation template
 - Supporting various threshold ranges. Input data that exceeds the threshold will be processed by the interpolation algorithm.
 
 ## Processing Stream Configuration
-The configuration method of the AI data processing stream depends on the type of selected time window. Time window is a useful data processing mechanism of streaming computing. Windowing is simply the notion of taking a data source and chopping it up along temporal boundaries into finite chunks for processing (such as sum). EnOS Streaming Processing Engine supports tumbling window.
+The configuration method of the AI data processing stream depends on the type of selected time window. Time window is a useful data processing mechanism of streaming computing. Windowing is simply the notion of taking a data connection and chopping it up along temporal boundaries into finite chunks for processing (such as sum). EnOS Streaming Processing Engine supports tumbling window.
 
 ### Processing strategy
 
@@ -37,7 +37,7 @@ EnOS integrates asset templates to normalize all asset input data, so the stream
 
  + **Window size**: Specifies the amount of data to be computed in a single window.
 
-   > In sequential aggregation streams like "a -> b -> c", the window size of stream "b -> c" should be the same as that of stream "a -> b" because stream "a -> b" will generate an intermediate output. 
+   > In sequential aggregation streams like "a -> b -> c", the window size of stream "b -> c" should be the same as that of stream "a -> b" because stream "a -> b" will generate an intermediate output.
 
  + **Aggregation**: The function that is selected to compute data in the window. EnOS Streaming Processing Engine currently supports functions like `max`, `min`, `avg`, `sum`, and `cnt`.
 

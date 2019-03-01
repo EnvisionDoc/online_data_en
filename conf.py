@@ -144,24 +144,126 @@ html_sidebars = {
 htmlhelp_basename = u'EnOSDocumentationCenterdoc'
 
 
-# -- Options for LaTeX output ---------------------------------------------
+latex_logo = "bg.png"
 
+# -- Options for LaTeX output ---------------------------------------------
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
     'papersize': 'a4paper',
+    # Sonny, Lenny, Glenn, Conny, Rejne, Bjarne and Bjornstrup
+    # 'fncychap': '\\usepackage[Lenny]{fncychap}',
+    'fncychap': '\\usepackage{fncychap}',
+    'fontpkg': '\\usepackage{amsmath,amsfonts,amssymb,amsthm}',
 
+    'figure_align':'htbp',
     # The font size ('10pt', '11pt' or '12pt').
     #
     'pointsize': '10pt',
 
     # Additional stuff for the LaTeX preamble.
     #
-    'preamble': '\geometry{a4paper,left=3cm,right=3cm,top=2cm,bottom=2cm}',
+    'preamble': r'''
+        \setcounter{secnumdepth}{3}
+        \setcounter{tocdepth}{2}
+        \usepackage{amsmath,amsfonts,amssymb,amsthm}
+        \usepackage{graphicx}
+        \usepackage[notlot,nottoc,notlof]{}
+        \usepackage{color}
+        \usepackage{transparent}
+        \usepackage{eso-pic}
+        \usepackage{lipsum}
+        \usepackage{footnotebackref}
+        \usepackage{mathptmx}
+        \usepackage{anyfontsize}
+        \usepackage{t1enc}
+        \usepackage{setspace}
+        \singlespacing
+        \usepackage{datetime}
+        \usepackage{eso-pic,graphicx}
+        \newdateformat{MonthYearFormat}{%
+            \monthname[\THEMONTH], \THEYEAR}
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
 
+        \fancyhead[L]{\ifthenelse{\isodd{\value{page}}}{ \small \nouppercase{\leftmark} }{}}
+        \fancyhead[R]{\ifthenelse{\isodd{\value{page}}}{}{ \small \nouppercase{\rightmark} }}
+
+        %\fancyhead[RO]{\small \nouppercase{\rightmark}}
+        %\fancyhead[LE]{\small \nouppercase{\leftmark}}
+
+        \fancyfoot[R]{\ifthenelse{\isodd{\value{page}}}{{\tiny EnOS Stream Analytics} }{\href{https://www.envisioniot.com}{\tiny IOT}}}
+
+        %%% page number
+        \fancyfoot[CO, CE]{\thepage}
+
+        \renewcommand{\headrulewidth}{0.5pt}
+        \renewcommand{\footrulewidth}{0.5pt}
+
+        \RequirePackage{tocbibind} %%% comment this to remove page number for following
+        \addto\captionsenglish{\renewcommand{\contentsname}{Table of contents}}
+        \addto\captionsenglish{\renewcommand{\listfigurename}{List of figures}}
+        \addto\captionsenglish{\renewcommand{\listtablename}{List of tables}}
+        % \addto\captionsenglish{\renewcommand{\chaptername}{Chapter}}
+
+
+        %%reduce spacing for itemize
+        \usepackage{enumitem}
+        \setlist{nosep}
+
+        %%%%%%%%%%% Quote Styles at the top of chapter
+        \usepackage{epigraph}
+        \setlength{\epigraphwidth}{0.8\columnwidth}
+        \newcommand{\chapterquote}[2]{\epigraphhead[60]{\epigraph{\textit{#1}}{\textbf {\textit{--#2}}}}}
+        %%%%%%%%%%% Quote for all places except Chapter
+        \newcommand{\sectionquote}[2]{{\quote{\textit{``#1''}}{\textbf {\textit{--#2}}}}}
+    ''',
+
+
+    'maketitle': r'''
+        \pagenumbering{Roman} %%% to avoid page 1 conflict with actual page 1
+
+        \begin{titlepage}
+            \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{bg.png}}
+
+            \vspace*{15mm} %%% * is used to give space from top
+            \fontsize{40pt}{\baselineskip}\selectfont \textbf{EnOS}
+
+            \vspace{5mm}
+
+            \fontsize{40pt}{\baselineskip}\selectfont \textbf{Stream Analytics}
+
+            \vspace{5mm}
+
+            \huge \textmd{Version}\textbf{ latest}
+            %% \vfill adds at the bottom
+            \vfill
+            \centerline{\fontsize{16pt}{\baselineskip}\selectfont \textbf{Envision Digital}}
+            \vspace{3mm}
+            \centerline{\fontsize{16pt}{\baselineskip}\selectfont \textmd{\today}}
+        \end{titlepage}
+
+        \clearpage
+        \pagenumbering{roman}
+        # \tableofcontents
+        # %%%\listoffigures
+        # %% \listoftables
+        \clearpage
+        \pagenumbering{arabic}
+
+        ''',
     # Latex figure (float) alignment
     #
-    'figure_align': 'htbp',
+    # 'figure_align': 'htbp',
+    'sphinxsetup': \
+        'hmargin={0.7in,0.7in}, vmargin={1in,1in}, \
+        verbatimwithframe=true, \
+        TitleColor={rgb}{0,0,0}, \
+        HeaderFamily=\\rmfamily\\bfseries, \
+        InnerLinkColor={rgb}{0,0,1}, \
+        OuterLinkColor={rgb}{0,0,1}',
+        'tableofcontents':' ',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -169,7 +271,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, u'EnOSDocumentationCenter.tex', u'EnOS Stream Analytics',
-     u'Envision Digital', u'manual'),
+     u'Envision Digital', 'book', 'true'),
 ]
 
 
@@ -190,7 +292,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'EnOSDocumentationCenter', 'EnOS Stream Analytics',
-     author, 'EnOSDocumentationCenter', 'Product documentation about EnOS Stream Analytics.',
+     author, 'EnOSDocumentationCenter', 'One line description of project.',
      'Miscellaneous'),
 ]
 
