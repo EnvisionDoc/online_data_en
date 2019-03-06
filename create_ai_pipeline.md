@@ -10,7 +10,7 @@ EnOS Streaming System provides unified operation interface for developers to qui
 
 4. From the **Window Type** and **Latency Setting** dropdown lists, select a window strategy and latency setting for the pipeline.
 
-   - **Window Type**: Windowing is simply the notion of taking a data connection and chopping it up along temporal boundaries into finite chunks for processing. Currently, only fixed windows are supported. With fixed windows, the input data are chopped into fixed-sized windows and then processed. See the following example.
+   - **Window Type**: Windowing is simply the notion of taking a data source and chopping it up along temporal boundaries into finite chunks for processing. Currently, only fixed windows are supported. With fixed windows, the input data are chopped into fixed-sized windows and then processed. See the following example.
 
    .. image:: media/window_type.png
       :width: 780px

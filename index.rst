@@ -27,12 +27,6 @@
    designing_ai_pipeline
    monitor_ai_pipeline
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Reference
-
-   statement_syntax
-
 
 Downloads
 """"""""
