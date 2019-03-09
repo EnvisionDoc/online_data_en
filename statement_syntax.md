@@ -1,40 +1,43 @@
-# 多路归并处理表达式语法
+# Multi Point Merge Expression Syntax
 
-处理策略中输出逻辑表达式支持的常见算法如下：
+The supported syntax for the processing logic expressions is described in the following table:
 
-- 变量选择符，使用方法为：​${ 变量 }，变量必须是模型的某个测点或者属性。
+.. list-table::
+   :widths: 20 20 60
 
-- if else 条件判断语句:	
+   * - Expression Symbol
+     - Function
+     - Description
+   * - $
+     - Variable selector
+     - The format is `​${ variable }`, in which `variable` must be a measure point or an attribute of a model.
+   * - if
+     - Conditional statement
+     - Only if the condition is true, the statement runs the code. The format of the statement is: `if (condition) { the code to be run }`.
+   * - if...else
+     - Conditional statement
+     - If the condition is true, the statement runs a code. If the condition is false, the statement runs another code. The format of the statement is: `if (condition) { the code to be run when condition is true} else { the code to be run when condition is false}`.
+   * - if...else if...else
+     - Conditional statement
+     - Run one of multiple codes by different conditions. The format of the statement is: `if (condition 1) { the code to be run when condition 1 is true} else if (condition 2) { the code to be run when condition 2 is true} else { the code to be run when conditions 1 and 2 are false}`.
+   * - "::"
+     - Namespace identifier
+     - Refer to the C++ syntax. The format of the statement is: `class name (model)` :: `class member (measure point / attribute)`.
+   * - "+ - * /"
+     - Arithmetic operators
+     -
+   * - "! && |"
+     - Logical operators
+     -
 
-  - if语句，只有当指定条件为 true 时，该语句才会执行代码。
+.. note:: Multi Point Merge expressions support Scala syntax, but do not support loop statements like for and while.
 
-    > if (条件) { 只有当条件为 true 时执行的代码 }
-
-  - if...else语句，当条件为 true 时执行代码，条件为 false 时执行其它代码。
-
-    > if (条件) { 当条件为 true 时执行的代码 } else { 当条件不为 true 时执行的代码 }
-
-  - 可使用 if...else if...else 语句来选择多个代码块之一来执行，比如：
-
-    > if (条件 1) { 当条件 1 为 true 时执行的代码 } else if (条件 2) { 当条件 2 为 true 时执行的代码 } else { 当条件 1 和 条件 2 都不为 true 时执行的代码 }
-
-- :: 名称空间标识符：参考C++语法。::前面一般是类名称（模型），后面一般是该类的成员名称（模型测点或者模型属性）。
-
-- 算术运算符：+（加)、–（减）、*（乘）、/（除）等。
-
-- 逻辑运算符：!（逻辑非）、&&（逻辑与）、|（逻辑或）
-
-> 多路归并数据处理表达式支持scala语法，EnOS Stream Analytics禁止for，while等循环语句。
-
-
-
-## 表达式范例解释：
-
+## Expression Example
 ```scala
-if(${turbine::state}=="Noraml")${turbine::wind_speed}+2*${turbine::power)
+if(${turbine::state}=="Noraml")${turbine::wind_speed}+2*${turbine::power}
 ```
 
-上述表达式的含义如下：如果风机的状态为“Normal”，则输出风机风速+2*风机的功率。
+The function of the above expression is: If the turbine status is `Normal`, output `wind_speed + 2*power`.
 
 
 
