@@ -14,14 +14,12 @@
    streaming_concepts
    data_flow
    ai_template_overview
-   multi_point_overview
 
 .. toctree::
    :maxdepth: 1
    :caption: Get Started
 
    gettingstarted_ai
-   gettingstarted_multi_point
 
 .. toctree::
    :maxdepth: 1
@@ -29,12 +27,6 @@
 
    designing_ai_pipeline
    monitor_ai_pipeline
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Reference
-
-   statement_syntax
 
 
 Downloads
