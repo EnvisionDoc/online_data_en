@@ -1,5 +1,5 @@
-# Designing a Data Aggregation Stream
-The general process of designing a data aggregation stream is as follows:
+# Developing a Data Aggregation Stream
+The general process of developing a data aggregation stream is as follows:
 
 .. image:: media/managing_stream.png
 
@@ -10,8 +10,8 @@ EnOS Streaming System supports creating a data processing stream and importing t
 
 ## Configuring the Stream
 EnOS Streaming System provides templates to enable developers configure the following streams:
-- Window Aggregation for AI template: Supports AI data aggregation for a measure point and assign the processed data to another measure point on the same device. For details, see [AI Data Aggregation](ai_template_overview).  
-- Multiple Data Streams Aggregation template: Supports expression processing of multiple measure points on a device.
+- Window Aggregation for AI template: Supports AI data aggregation for a measure point and assign the processed data to another measure point on the same device. For details, see [AI Data Aggregation Template](ai_template_overview).  
+- Multi Point Merge template: Supports expression processing of multiple measure points of the same device. For details, see [Multi Point Merge Template](multi_point_overview).
 
 ## Releasing the Stream
 After the stream configuration is completed, you can release it online. Before that, other processing of the stream can be performed, such as saving the stream configuration, setting alarms, reverting the configuration to the online version, and exporting the configuration.

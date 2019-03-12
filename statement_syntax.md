@@ -37,7 +37,11 @@ The supported syntax for the processing logic expressions is described in the fo
 if(${turbine::state}=="Noraml")${turbine::wind_speed}+2*${turbine::power}
 ```
 
-The function of the above expression is: If the turbine status is `Normal`, output `wind_speed + 2*power`.
+The function of the above expression is: If the turbine status is `Normal`, then the output is:
+
+```
+wind_speed + 2*power
+```
 
 
 

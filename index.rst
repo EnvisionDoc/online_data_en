@@ -14,12 +14,14 @@
    streaming_concepts
    data_flow
    ai_template_overview
+   multi_point_overview
 
 .. toctree::
    :maxdepth: 1
    :caption: Get Started
 
    gettingstarted_ai
+   gettingstarted_multi_point
 
 .. toctree::
    :maxdepth: 1
