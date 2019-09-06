@@ -3,6 +3,7 @@
 ## Device-level computing API
 
 The following APIs are provided for device-level computing:
+
 - `CalculateDevice`
 
   The `CalculateDevice` API provides access to basic device objects and can satisfy complex computing requirements between device points.
@@ -12,6 +13,7 @@ The following APIs are provided for device-level computing:
           List<VirtualPoint> calculate(final DeviceCal device);
       }
   ```
+
 - `CalculateDeviceWithDataService`
 
   The `CalculateDeviceWithDataService` API provides a service broker for accessing master data and dimension data in addition to the device objects.
@@ -39,6 +41,7 @@ Similar to device-level APIs, EnOS provides the following types of site-level co
 - `CalculateSiteWithDataService`
 
   The `CalculateSiteWithDataService` API provides access to the master data and dimension data through a service broker in addition to CalculateSite interface.
+
   ```java
         public interface CalculateSiteWithDataService extends Serializable {
             List<VirtualPoint> calculate(final SiteCal site,

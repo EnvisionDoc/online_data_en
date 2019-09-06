@@ -1,18 +1,18 @@
-# Getting Started with Stream Computing Service
+# Getting started with stream computing service
 
 This topic illustrates how to use the stream computing service and print computation logs through the Java SDKs provides by EnOS.
 
-## System Requirements
+## System requirements
 
 Java SDK version 1.6 or 1.7
 
-## Before You Start
+## Before you start
 
-- Stream computing is based on the real-time data collected from devices that are connected to the EnOS cloud. For how to connect devices, see [EnOS Device connection](https://www.envisioniot.com/docs/device-connection/en/latest/deviceconnection_overview.html).
+- Stream computing is based on the real-time data collected from devices that are connected to the EnOS cloud. For how to connect devices, see [EnOS Device connection](/docs/device-connection/en/1.0/deviceconnection_overview.html).
 
 - Download the EnOS stream computing and log SDKs.
 
-- To use the stream computing service, a computation package must carry a corresponding application key, which is obtained through the application management service. For more information, see [Getting started with application registration](https://www.envisioniot.com/docs/app-development/en/latest/app_mgmt/getting_started_app_management.html).
+- To use the stream computing service, a computation package must carry a corresponding application key, which is obtained through the application management service. For more information, see [Getting started with application management](/docs/app-development/en/1.0/app_mgmt/getting_started_app_management.html).
 
 
 - Add the EnOS stream computing package into the `pom.xml` file for the project:
@@ -27,6 +27,7 @@ Java SDK version 1.6 or 1.7
   ```
 
 - EnOS provides the log SDK. To use the log service, add the following dependency into the `pom.xml` file:
+
   ``` xml
       <dependency>
         <groupId>com.envisioniot</groupId>
@@ -37,9 +38,9 @@ Java SDK version 1.6 or 1.7
 
 - As the computation package is loaded via Java's [ServiceLoader](https://docs.oracle.com/javase/7/docs/api/java/util/ServiceLoader.html), you must create a new file under the `META-INFF/services` folder. This file should be named with the service API name, and the contents of the file is the Java code that implements the service as shown in the following section.
 
-## Sample Codes
+## Sample codes
 
-### Sample 1: Device-level Computation
+### Sample 1: Device-level computation
 
 ``` java
 package com.envision.energy.streaming.app;
@@ -83,7 +84,7 @@ public class DeviceCalImpl implements CalculateDevice {
 }
 ```
 
-### Sample 2: Site-level Computation
+### Sample 2: Site-level computation
 
 ``` java
 package com.envision.energy.streaming.app;
@@ -127,7 +128,7 @@ public class SiteCalImpl implements CalculateSite {
 }
 ```
 
-## Step 1:  Programming Java Code to Perform Stream Computing and Print Logs
+## Step 1:  Programming Java code to perform stream computing and print logs
 
 You can use the following code as a reference:
 
@@ -185,7 +186,7 @@ public class DeviceSampelCal implements CalculateDeviceWithDataService {
 
 ```
 
-## Step 2: Deploy the Stream Computing Package on EnOS
+## Step 2: Deploy the stream computing package on EnOS
 
 The finished Java codes need to be packed into a `jar` file and uploaded to EnOS for the computation to run.
 
@@ -197,7 +198,7 @@ The finished Java codes need to be packed into a `jar` file and uploaded to EnOS
    - Select the application in the name of which to run stream computing.
    - Enter the file version.
 
-## Step 3: Query the Logs of Stream Computing Jobs
+## Step 3: Query the logs of stream computing jobs
 
 1. Click **Monitoring and Logs > Log Management** from the left navigation panel of EnOS Console.
 
